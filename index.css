@@ -1,0 +1,172 @@
+body{
+    background-color: #333;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+}
+.js-clock{
+    text-align: center;
+
+}
+.nowTime {
+    font-size:5rem;
+    text-align: center;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    display: inline;
+    min-width: 700px;
+}
+
+.js-form .yourName{
+    font-size: 2rem;
+    margin: 40px;
+    border: 2px solid #333333;
+    text-align: center;
+}
+
+/* clock 이벤트*/
+.clicked {
+    color: black;
+    transition: ease-in-out 0.5s;
+    text-shadow: 2px 2px 2px gray;
+}
+.clicked2 {
+    background-color: black;
+    transition: ease-in-out 0.5s;
+}
+
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display:block;
+}
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: fadeIn 0.5s linear;
+    height: 100%;
+    z-index: -1;
+}
+.js-weather {
+    display: block;
+    top: 0;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.js-toDoForm{
+    text-align: center;
+}
+.js-toDoForm .todo-input {
+    width: 40%;
+    min-width: 400px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    border: 0;
+    background-color: white;
+    border: 2px solid #333;
+    color: black;
+    border-radius: 20px;
+}
+
+.js-toDoForm .solid{
+    border:2px solid white;
+    background-color: #333;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.toDo-Box ul {
+    width: 70%;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style:none;
+    padding-left: 0px;
+}
+.toDo-Box ul li{
+    margin: 10px;
+    font-size: 1.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.toDo-Box ul li:last-child {
+    border-bottom: 0px;
+}
+.showing {
+    text-align: center;
+}
+.toDo-Box ul li button{
+    background-color: #333;
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.toDo-Box ul li button:hover{
+    background-color: white;
+    color: black;
+    transition:  0.5s;
+    cursor: pointer;
+}
+.toDo-Box ul li span {
+    display: inline;
+    word-break: break-all;
+}
+.toDo-Box ul li {
+    border-bottom: 1px solid #333;
+    color: black;
+    text-shadow: none;
+
+}
+.toDo-Box ul{
+    border: 2px solid black;
+    background-color: white;
+    overflow:auto;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.toDo-Box .listsolid{
+    background-color: #333;
+    transition: ease-in-out 0.5s;
+}
+.toDo-Box .listsolid li{
+    color: white;
+    background-color: #333;
+    border-bottom: 1px solid white;
+    transition: ease-in-out 0.5s;
+}
+.toDo-Box .listsolid li button{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    
+}
+.toDo-Box .listsolid li button:hover{
+    background-color: #333;
+    color: white;
+    transition:  0.5s;
+    border: 1px solid white;
+}
