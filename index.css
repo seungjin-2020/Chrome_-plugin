@@ -16,12 +16,20 @@ body{
     display: inline;
     min-width: 700px;
 }
-
+.name_box {
+    text-align: center;
+}
 .js-form .yourName{
     font-size: 2rem;
     margin: 40px;
     border: 2px solid #333333;
     text-align: center;
+}
+.js-form .solid {
+    border:2px solid white;
+    background-color: #333;
+    color: white;
+    transition: ease-in-out 0.5s;
 }
 
 /* clock 이벤트*/
@@ -40,9 +48,13 @@ body{
 .greetings {
     display: none;
 }
-
+.greetings_box {
+    display: block;
+    text-align: center;
+}
 .showing {
-    display:block;
+    display:inline-block;
+    cursor: pointer;
 }
 @keyframes fadeIn{
     form{
@@ -111,9 +123,6 @@ body{
 .toDo-Box ul li:last-child {
     border-bottom: 0px;
 }
-.showing {
-    text-align: center;
-}
 .toDo-Box ul li button{
     background-color: #333;
     color: white;
@@ -151,6 +160,7 @@ body{
 .toDo-Box .listsolid{
     background-color: #333;
     transition: ease-in-out 0.5s;
+    border: 2px solid white;
 }
 .toDo-Box .listsolid li{
     color: white;
